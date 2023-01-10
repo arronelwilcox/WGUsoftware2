@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserLogInController">
+   <center>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <children>
+            <Pane prefHeight="288.0" prefWidth="629.0" GridPane.rowIndex="6">
+               <children>
+                  <PasswordField fx:id="userNameField" layoutX="152.0" layoutY="93.0" />
+                  <Label layoutX="202.0" layoutY="120.0" text="User Name" />
+                  <PasswordField fx:id="passWordField" layoutX="375.0" layoutY="93.0" />
+                  <Label layoutX="428.0" layoutY="120.0" text="Password" />
+                  <RadioButton fx:id="englishRadio" layoutX="183.0" layoutY="180.0" mnemonicParsing="false" text="English" />
+                  <RadioButton fx:id="frenchRadio" layoutX="184.0" layoutY="206.0" mnemonicParsing="false" text="French" />
+                  <Button fx:id="logInButton" layoutX="497.0" layoutY="189.0" mnemonicParsing="false" onAction="#onLogIn" text="Log in" />
+                  <Button fx:id="cancelButton" layoutX="427.0" layoutY="189.0" mnemonicParsing="false" text="Cancel" />
+                  <Label alignment="TOP_CENTER" layoutX="195.0" layoutY="27.0" prefHeight="17.0" prefWidth="267.0" text="Welcome" textAlignment="CENTER" textFill="#6268e6">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <Arc fill="#84afe0" layoutX="92.0" layoutY="106.0" length="270.0" radiusX="67.0" radiusY="90.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Label layoutX="57.0" layoutY="232.0" prefHeight="24.0" prefWidth="63.0" text="Time Zone" />
+                  <TextField layoutX="134.0" layoutY="231.0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
